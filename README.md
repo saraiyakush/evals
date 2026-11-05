@@ -21,15 +21,18 @@ Each case runs several times (3 by default) because model output is non-determin
 
 ## Project structure
 
-| Path | Purpose |
-|---|---|
-| `runner.py` | Runs the test cases against each setup and prints results. |
-| `checker.py` | Parses Claude's stream-json output and defines the graders. |
-| `tldr-skill-tests.yaml` | Test cases: prompt, number of runs, expected outcomes. |
-| `article.txt` | Sample text used as input for the summary prompts. |
-| `with-skill/.claude/skills/tldr/SKILL.md` | The skill under test. |
-| `without-skill/` | Control setup with no skill installed. |
-| `results/` | Raw `.jsonl` logs from each run. Created automatically. |
+```text
+|___runner.py               <-- Runs the test cases against each setup and prints results.
+|___without-skill           <-- Control setup with no skill installed.
+|___with-skill
+| |___.claude
+| | |___skills
+| | | |___tldr
+| | | | |___SKILL.md        <-- The skill under test.
+|___article.txt             <-- Sample text used as input for the summary prompts.
+|___checker.py              <-- Parses Claude&apos;s stream-json output and defines the graders.
+|___tldr-skill-tests.yaml   <-- Test cases: prompt, number of runs, expected outcomes.
+```
 
 ## The skill under test
 
