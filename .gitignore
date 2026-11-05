@@ -1,0 +1,101 @@
+# ==========================================
+# Dependencies & Package Managers
+# ==========================================
+node_modules/
+bower_components/
+jspm_packages/
+pnpm-lock.yaml
+yarn-error.log
+.pnpm-store/
+vendor/
+.venv/
+venv/
+env/
+ENV/
+*.nupkg
+
+# ==========================================
+# Build Outputs & Compiled Code
+# ==========================================
+dist/
+build/
+out/
+target/
+bin/
+obj/
+x64/
+x86/
+Release/
+Debug/
+*.exe
+*.dll
+*.so
+*.dylib
+*.class
+*.pyc
+*.pyo
+
+# ==========================================
+# Environment Variables & Secrets (CRITICAL)
+# ==========================================
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.pem
+*.key
+*.secret
+
+# ==========================================
+# Logs and Caches
+# ==========================================
+*.log
+npm-debug.log*
+yarn-debug.log*
+.eslintcache
+.parcel-cache
+.next/
+.nuxt/
+.cache/
+.sass-cache/
+
+# ==========================================
+# Testing & Coverage
+# ==========================================
+coverage/
+.nyc_output/
+*.lcov
+htmlcov/
+
+# ==========================================
+# IDEs and Text Editors
+# ==========================================
+# VS Code
+.vscode/
+!.vscode/extensions.json
+*.code-workspace
+
+# IntelliJ / JetBrains
+.idea/
+*.iml
+*.iws
+
+# Eclipse / NetBeans
+.metadata/
+.classpath
+.project
+.settings/
+
+# ==========================================
+# Operating System Specific Files
+# ==========================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini

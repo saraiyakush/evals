@@ -1,0 +1,20 @@
+- id: trigger-paraphrase
+  runs: 3
+  prompt: "What's the gist of this? {article}"
+  expect:
+    skill_loaded: tldr
+
+- id: trigger-negative
+  runs: 3
+  prompt: "Write a poem about autumn"
+  expect:
+    skill_not_loaded: tldr
+
+- id: behavior-format
+  runs: 3
+  prompt: "Summarize: {article}"
+  expect:
+    skill_loaded: tldr
+    bullet_count: 3
+    max_words_per_bullet: 15
+    first_line_is_bullet: true
